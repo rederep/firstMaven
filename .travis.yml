@@ -1,11 +1,12 @@
-group: deprecated-2017q4
-os: linux
+group: deprecated-2017Q4
+os:
+  - linux
 language: java
 jdk:
   - oraclejdk8
 cache:
   directories:
-  - &HOME/.m2
+  - $HOME/.m2
 install:
   - mvn clean install -Dgpg.skip=true
 after_success:
